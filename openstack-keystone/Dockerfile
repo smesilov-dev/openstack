@@ -19,7 +19,7 @@ RUN pip3 install --user --upgrade pip && \
     pip3 install PyMySQL
 
 # Copy init script
-COPY ./docker-entrypoint.sh /
+COPY docker-entrypoint.sh /
 
 # Configure keystone user
 RUN useradd keystone
