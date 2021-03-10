@@ -20,6 +20,7 @@ RUN pip3 install --user --upgrade pip && \
 
 # Copy init script
 COPY docker-entrypoint.sh /
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]
 
 # Configure keystone user
 RUN useradd keystone
